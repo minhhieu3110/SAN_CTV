@@ -1,0 +1,77 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "src/assets/fonts/SVN-Poppins-Black.otf",
+      "sha1": "8971b8c8312d10e7cf74ad1135a07449378619d6"
+    },
+    {
+      "path": "src/assets/fonts/SVN-Poppins-BlackItalic.otf",
+      "sha1": "604ddbfcf3bdc208db4643c7882221992b8e7a9f"
+    },
+    {
+      "path": "src/assets/fonts/SVN-Poppins-Bold.otf",
+      "sha1": "0fd422b9b7de8045472365d8c31c764739d3226e"
+    },
+    {
+      "path": "src/assets/fonts/SVN-Poppins-BoldItalic.otf",
+      "sha1": "a6a8416b5779eadf313a29d86e07532a63a7ba71"
+    },
+    {
+      "path": "src/assets/fonts/SVN-Poppins-ExtraBold.otf",
+      "sha1": "318a75201101e7481808b2725c3f4ceb002429fa"
+    },
+    {
+      "path": "src/assets/fonts/SVN-Poppins-ExtraBoldItalic.otf",
+      "sha1": "4af94ac82b90fcb2a0795a1f1429d1b931c8b895"
+    },
+    {
+      "path": "src/assets/fonts/SVN-Poppins-ExtraLight.otf",
+      "sha1": "be61fd8b8db62c93845b5c020c207118a77f5f22"
+    },
+    {
+      "path": "src/assets/fonts/SVN-Poppins-ExtraLightItalic.otf",
+      "sha1": "cc8479621159f6f05f22293b8188bc3ecd3b5e4b"
+    },
+    {
+      "path": "src/assets/fonts/SVN-Poppins-Italic.otf",
+      "sha1": "d379337d85aec72c7b6937581b11e24a65575cef"
+    },
+    {
+      "path": "src/assets/fonts/SVN-Poppins-Light.otf",
+      "sha1": "afca47abedf55a74e3deba766ce8be7607b4cb74"
+    },
+    {
+      "path": "src/assets/fonts/SVN-Poppins-LightItalic.otf",
+      "sha1": "c57b868663a87bceec300b4a9de3f352689ebd2b"
+    },
+    {
+      "path": "src/assets/fonts/SVN-Poppins-Medium.otf",
+      "sha1": "9620605b3feb4cf0f75a501ff8b01311c5d25b67"
+    },
+    {
+      "path": "src/assets/fonts/SVN-Poppins-MediumItalic.otf",
+      "sha1": "0cb19f10e0465c3618b5a833e84f128042a4682c"
+    },
+    {
+      "path": "src/assets/fonts/SVN-Poppins-Regular.otf",
+      "sha1": "c547db443aad133accdda4fad247d42207d4099d"
+    },
+    {
+      "path": "src/assets/fonts/SVN-Poppins-SemiBold.otf",
+      "sha1": "c0172ccb3447cccd57491936773fd6354e9575dc"
+    },
+    {
+      "path": "src/assets/fonts/SVN-Poppins-SemiBoldItalic.otf",
+      "sha1": "f522027b1294c6ed45dd77c8c20484718f8dc1d8"
+    },
+    {
+      "path": "src/assets/fonts/SVN-Poppins-Thin.otf",
+      "sha1": "449b08e29bce44f3b7fcbdbb0e43ea4951518b4a"
+    },
+    {
+      "path": "src/assets/fonts/SVN-Poppins-ThinItalic.otf",
+      "sha1": "3bf22804a5f6bb758a8a613ea4e11a642c454e42"
+    }
+  ]
+}

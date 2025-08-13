@@ -1,0 +1,37 @@
+export const COLORS = {
+  primary: '#E10001',
+  raisinBlack: '#212121',
+  white: '#FFFFFF',
+  antiFlashWhite: '#F1F1F1',
+  goldenPoppy: '#FEC202',
+  darkJungleGreen: '#1A2227',
+  smoke: 'rgba(0, 0, 0, 0.3)',
+  aliceBlue: '#F2F7FB',
+  platinum: '#E8E8E8',
+  darkSilver: '#707070',
+  islamicGreen: '#00BF00',
+  brightGray: '#E9E9E9',
+  crimsonRed: '#990100',
+  sweetBrown: '#AD3332',
+  cultured: '#F8F8F8',
+  lemonChiffon: '#FFF3CC',
+  lavenderBlush: '#FFF5F5',
+  nyanza: '#E6FFDE',
+  borderLight: '#BFBFBF',
+  richBlack: '#030101',
+  transparent: 'transparent',
+  orange: '#FD800E',
+  secondary: '#00D1F0',
+  background: '#808080',
+  backgroundSmoke: '#E8E8E8',
+  darkCharcoal: '#333333',
+  ghostWhite: '#F5F7FB',
+  mistyRose: '#FFE3E3',
+  lightCyan: '#E0F3FF',
+  greenCheck: '#34B233'
+};
+
+export const GRADIENT = {
+  primary: ['#F30304', '#990100'],
+  shimmer: ['#E6E6E6', '#f5f5f5', '#f5f5f5', '#E6E6E6'],
+};
