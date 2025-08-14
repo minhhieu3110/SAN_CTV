@@ -9,15 +9,16 @@ import {
   TextInput,
   Modal,
 } from 'components';
-import { COLORS, height, width } from 'theme';
-import { Platform, ScrollView, TouchableOpacity } from 'react-native';
+import { COLORS, height } from 'theme';
+import { Platform, ScrollView } from 'react-native';
 import { useForm } from 'react-hook-form';
 import { formConfig, FormField } from './formConfig';
 import DateTimePicker from 'react-native-modal-datetime-picker';
-import { Icons, Images } from 'assets';
-import { useGetProvince, useGetWard } from 'redux/auth/apiHook';
+import { Icons } from 'assets';
+import { useGetProvince, useGetWard, useSignUp } from 'redux/auth/apiHook';
 import { Province } from 'models/user';
 import { SKIP_TOKEN } from 'redux/constant';
+import Toast from 'react-native-toast-message';
 
 export const Information = ({
   setStack,
@@ -31,6 +32,7 @@ export const Information = ({
   const {
     control,
     formState: { errors },
+    handleSubmit,
   } = useForm<FormField>(formConfig);
   const [date, setDate] = useState(new Date());
   const [seletedDate, setSelectedDate] = useState(new Date());
@@ -61,6 +63,36 @@ export const Information = ({
   const [dataAddress, setDataAddress] = useState<Province[] | undefined>();
   const [showChooseAddress, setShowChooseAddress] = useState(false);
   const [type, setType] = useState<number>();
+  const { request: requestSignUp, result } = useSignUp();
+  const handleSignUp = (value: FormField) => {
+    requestSignUp({
+      full_name: value.fullname,
+      username: phone,
+      identification: value.cccd,
+      password: value.password,
+      email: value.email,
+      refferal_code: value.referral_code ? value.referral_code : '',
+      device_name: 'device_name',
+      device_token: 'device_token',
+      birthday: dateOfBirth,
+      province: province.code,
+      ward: ward.code,
+      address: value.address,
+    })
+      .then(() => {
+        Toast.show({
+          type: 'success',
+          text1: result?.message,
+        });
+      })
+      .catch(err => {
+        Toast.show({
+          type: 'error',
+          text1: err?.message,
+        });
+      });
+  };
+  console.log('result', result);
 
   return (
     <Block
@@ -108,6 +140,7 @@ export const Information = ({
             label="CCCD"
             height={41}
             placeholderTextColor={COLORS.darkSilver}
+            maxLength={12}
           />
           <FormInput
             control={control}
@@ -235,7 +268,8 @@ export const Information = ({
             placeholderTextColor={COLORS.darkSilver}
             height={41}
           />
-          <Block
+          <Pressable
+            onPress={handleSubmit(handleSignUp)}
             marginTop={20}
             marginBottom={100}
             backgroundColor={COLORS.primary}
@@ -247,7 +281,7 @@ export const Information = ({
             <Text fontSize={15} color={COLORS.white}>
               Tiếp tục
             </Text>
-          </Block>
+          </Pressable>
         </Block>
       </ScrollView>
       {showDateTimePicker && (

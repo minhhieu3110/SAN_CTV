@@ -28,7 +28,6 @@ export const InputOTP = ({
   };
   const reSend = () => {
     refresh();
-    console.log(data);
   };
   return (
     <Block
